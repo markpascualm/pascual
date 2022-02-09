@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+<div class="main-course-box">
+	<div class="left-box">
+		<button class="btns s" onclick="dropDown()">Select Course</button>
+		<a href="c1.html" target="course"><button class="btn" id="btn">Bachelor of arts</button></a>
+		<a href="c2.html" target="course"><button class="btn" id="btn2">Bachelor of Science in Business Administration</button></a>
+		<a href="c3.html" target="course"><button class="btn" id="btn3">Bachelor of Science in Computer Science</button></a>
+		<a href="c4.html" target="course"><button class="btn" id="btn4">Bachelor of Elementary Education</button></a>
+		<a href="c5.html" target="course"><button class="btn" id="btn5">Bachelor of Secondary Education</button></a>
+	</div>
+	<div class="right-box">
+		<iframe src="c1.html" name="course"></iframe>
+	</div>
+</div>
+<script type="text/javascript">
+	function dropDown() {
+		var btn = document.getElementById('btn');
+		var btn2 = document.getElementById('btn2');
+		var btn3 = document.getElementById('btn3');
+		var btn4 = document.getElementById('btn4');
+		var btn5 = document.getElementById('btn5');
+
+		if (btn.style.display === "block") {
+			btn.style.display = "none";
+		}
+		else{
+			btn.style.display = "block";
+		}
+		if (btn2.style.display === "block") {
+			btn2.style.display = "none";
+		}
+		else{
+			btn2.style.display = "block";
+		}
+		if (btn3.style.display === "block") {
+			btn3.style.display = "none";
+		}
+		else{
+			btn3.style.display = "block";
+		}
+		if (btn4.style.display === "block") {
+			btn4.style.display = "none";
+		}
+		else{
+			btn4.style.display = "block";
+		}
+		if (btn5.style.display === "block") {
+			btn5.style.display = "none";
+		}
+		else{
+			btn5.style.display = "block";
+		}
+	}
+</script>
+</body>
+</html>

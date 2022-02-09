@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+::-webkit-scrollbar{
+	display: none;
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: montserrat;
+	font-weight: bolder;
+}
+html, body{
+	height: 100%;
+}
+.main{
+	height: 100%;
+	width: 100%;
+	background-image: url(background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+nav{
+	height: 7%;
+	width: 100%;
+}
+button{
+	color: black;
+	text-decoration: none;
+	background-color: #3b633b;
+	border: none;
+	outline: none;
+	height: 100%;
+	width: 7%;
+	margin-left: 20px;
+	font-size: 1em;
+	color: white;
+	font-weight: normal;
+	cursor: pointer;
+}
+.btn{
+	height: 50px;
+	width: 100%;
+	margin-left: 0;
+	margin-top: 20px;
+	text-decoration: none;
+}
+.btn:hover{
+	opacity: .7;
+}
+.btns{
+	height: 50px;
+	width: 100%;
+	margin-left: 0;
+	margin-top: 20px;
+}
+.btns:hover{
+	opacity: .7;
+}
+.left{
+	margin-left: 20px;
+}
+iframe{
+	height: 93%;
+	width: 100%;
+	border:  none;
+}
+.title{
+	letter-spacing: 7px;
+	text-shadow: 10px 10px 10px #3b633b;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.about-box{
+	height: auto;
+	width: 80%;
+	border-style: double;
+	margin: auto;
+	margin-top: 5%;
+	padding: 20px;
+	background-color: lightblue;
+}
+h3{
+	text-align: center;
+	margin-top: 20px;
+}
+.main-course-box{
+	height: 100%;
+	display: flex;
+}
+.left-box{
+	height: 100%;
+	width: 20%;
+}
+.right-box{
+	height: 100%;
+	width: 80%;
+}
+.s{
+	display: none;
+	width: 50%;
+}
+a{
+	text-decoration: none;
+}
+h4{
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 20px;
+	text-shadow: 5px 5px 5px #3b633b;
+}
+p{
+	margin: 20px;
+	font-size: 1.3em;
+}
+
+
+@media screen and (max-width: 768px){
+	nav{
+		height: 5%;
+	}
+	button{
+		width: 20%;
+	}
+	iframe{
+		height: 95%;
+	}
+	.left{
+		margin-left: 0;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	.main-course-box{
+		display: block;
+	}
+	.left-box{
+		height: auto;
+		width: 100%;
+	}
+	.right-box{
+		height: 100%;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.s{
+		display: block;
+	}
+	.btn{
+		display: none;
+	}
+}
